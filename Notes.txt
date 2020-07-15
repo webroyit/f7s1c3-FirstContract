@@ -1,0 +1,31 @@
+// Fixed-size Types
+
+bool isOn;
+uint a;                             // Good for financial transfer like eth
+                                    // Must be positive whole numbers
+address recipient;                  // For ETH address and interact with another smart contract
+bytes32 data;                       // Holds any arbitrary binary data
+                                    // For string that less than 32 characters
+
+
+// Variable-size Types
+
+string name;                        // Any length
+bytes _data;                        // Does not have predefined length
+unit[] amounts;                     // For arrays
+                                    // Each elements in array must have the same type
+mapping(uint => string) users;      // Associative Array
+
+
+// User-defined data
+
+struct User{                        // Object
+    unit id;
+    string name;
+    unit[] foods
+}
+enum Sports{                        // For labels
+    BASEBALL,
+    FOOTBALL,
+    BASKETBALL
+}
