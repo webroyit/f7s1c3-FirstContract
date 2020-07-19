@@ -6,9 +6,15 @@ contract MyContract{
     // State Variable
     uint value;
     
-    // external to allow this function to be called outside of this file 
+    // function visibility
+    // internal for inheritance mechanism
+    // external to allow this function to be called outside of this file only 
+    // private to prevent this function from being called outside of this file
+    // public for inside and outside of this file
+    
     // view for read only (not changing data)
     // returns to return data (must specify the data type)
+    // _ for function that are private
     function getValue() external view returns(uint){
         return value;
     }
