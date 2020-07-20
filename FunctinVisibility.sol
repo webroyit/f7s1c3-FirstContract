@@ -2,7 +2,7 @@
 pragma solidity ^0.5.17;
 
 // Best practices is to name your contract the same as the file name
-contract MyContract{
+contract FunctinVisibility{
     // State Variable
     uint value;
     
