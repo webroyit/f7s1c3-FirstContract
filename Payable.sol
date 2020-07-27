@@ -20,4 +20,11 @@ contract Payable{
         return address(this).balance;
     }
     
+    address payable[] recipients;
+    
+    function sendEth(address payable recipient) external{
+        // Transfer 1 ether from this smart contract to recipient
+        // transfer require payable keyword
+        recipient.transfer(1 ether);
+    }
 }
